@@ -13,8 +13,8 @@
     "url" : "https://github.com/ktalebian/mcc-mnc"
   },
   "keywords": [
-    "mcc"
-    "mnc"
+    "mcc",
+    "mnc",
     "mobile country code",
     "mobile network code"
   ],
