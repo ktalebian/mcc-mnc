@@ -1,6 +1,6 @@
 {
   "name": "mcc-mnc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A wrapper for mcc-mnc lookup",
   "main": "index.js",
   "scripts": {
