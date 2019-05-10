@@ -23,52 +23,62 @@ Available methods are:
   - `clear()` Clears the search filter.
 
 Example 1:
-    
-    var MccMnc = require('mcc-mnc');
-    var mccMnc = new MccMnc();
-    
-    var match = mccMnc.mcc(310).mnc(330).get();
-    console.log(match)
+
+```javascript
+const MccMnc = require('mcc-mnc');
+const mccMnc = new MccMnc();
+
+const match = mccMnc.mcc(310).mnc(330).get();
+console.log(match);
+
+```
     
 Returns:
-    
-    { network: 'T-Mobile',
-      country: 'United States',
-      mcc: '310',
-      iso: 'us',
-      country_code: '1',
-      mnc: '330' }
+```javascript
+{ 
+  network: 'T-Mobile',
+  country: 'United States',
+  mcc: '310',
+  iso: 'us',
+  country_code: '1',
+  mnc: '330' 
+}
+```
 
 Example 2: 
 
-    var MccMnc = require('mcc-mnc');
-    var mccMnc = new MccMnc();
-    
-    var match = mccMnc.mnc(330).get();
-    console.log(match)
+```javascript
+const MccMnc = require('mcc-mnc');
+const mccMnc = new MccMnc();
+
+const match = mccMnc.mnc(330).get();
+console.log(match);
+```
     
 Returns:
+
+```javascript
+[ 
+  { network: 'Claro/ CTI/AMX',
+    country: 'Argentina Republic',
+    mcc: '722',
+    iso: 'ar',
+    country_code: '54',
+    mnc: '330' },
+  { network: 'Michigan Wireless LLC',
+    country: 'United States',
+    mcc: '311',
+    iso: 'us',
+    country_code: '1',
+    mnc: '330' },
+  { network: 'T-Mobile',
+    country: 'United States',
+    mcc: '310',
+    iso: 'us',
+    country_code: '1',
+    mnc: '330' } 
+]
+```
     
-    [ 
-      { network: 'Claro/ CTI/AMX',
-        country: 'Argentina Republic',
-        mcc: '722',
-        iso: 'ar',
-        country_code: '54',
-        mnc: '330' },
-      { network: 'Michigan Wireless LLC',
-        country: 'United States',
-        mcc: '311',
-        iso: 'us',
-        country_code: '1',
-        mnc: '330' },
-      { network: 'T-Mobile',
-        country: 'United States',
-        mcc: '310',
-        iso: 'us',
-        country_code: '1',
-        mnc: '330' } 
-    ]
-    
-  If no match is found, `-1` is returned.
+If no match is found, `-1` is returned.
   
