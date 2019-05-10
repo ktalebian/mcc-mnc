@@ -22,7 +22,9 @@ Available methods are:
   - `get()` Returns all the matched filters
   - `clear()` Clears the search filter.
 
-Example 1:
+## Examples
+
+#### Example 1:
 
 ```javascript
 const MccMnc = require('mcc-mnc');
@@ -45,7 +47,7 @@ Returns:
 }
 ```
 
-Example 2: 
+#### Example 2: 
 
 ```javascript
 const MccMnc = require('mcc-mnc');
